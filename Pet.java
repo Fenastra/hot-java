@@ -1,4 +1,3 @@
-
 public class Pet {
     String name;
     String species;
