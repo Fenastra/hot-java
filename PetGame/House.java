@@ -7,5 +7,6 @@ public class House {
 
         Pet.data(tony);
         Pet.feed(tony, burger);
+        ToDos.showToDo();
     }
 }
