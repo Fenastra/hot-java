@@ -6,12 +6,6 @@ public class House {
 
 
         Pet.data(tony);
-        System.out.println();
         Pet.feed(tony, burger);
-        System.out.println();
-        Food.data(burger);
-        System.out.println();
-        ToDos.showToDo();
-        System.out.println();
     }
 }

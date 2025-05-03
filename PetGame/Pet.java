@@ -12,7 +12,7 @@ public class Pet {
     // Prints a pet's data.
 
     public static void data(Pet subject) {
-        System.out.println(subject.name + " the " + subject.species);
+        System.out.println(("~" + subject.name + " the " + subject.species + "~").toUpperCase());
         System.out.println();
         System.out.println("Happiness: " + subject.happiness);
         System.out.println();
@@ -27,6 +27,7 @@ public class Pet {
         } else {
             System.out.println(subject.name + " is full.");
         }
+        System.out.println();
     }
 
     public static void reaction(Pet subject, int happinessAdd) {
@@ -39,8 +40,6 @@ public class Pet {
         } else if (happinessAdd <= -3) {
             System.out.println(subject.name + " hates it...");
         }
-        System.out.println();
-        Pet.data(subject);
 
         if (happinessAdd != 0) {
             subject.happiness += happinessAdd;
@@ -51,12 +50,14 @@ public class Pet {
         if (subject.happiness >= 5) {
             subject.happiness = 5;
         }
+        System.out.println();
+        Pet.data(subject);
     }
 
     // Feeds a pet a given Food
 
     public static void feed(Pet subject, Food food) {
-        System.out.println("You give " + subject.name + " a " + food.name + ".");
+        System.out.print("You give " + subject.name + " a " + food.name + ". ");
         if (!subject.isFull) {
             int totalHappy = 0;
             switch(food.flavor) {
