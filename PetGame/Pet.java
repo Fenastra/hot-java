@@ -12,7 +12,7 @@ public class Pet {
     // Prints a pet's data.
 
     public static void data(Pet subject) {
-        System.out.println(("~" + subject.name + " the " + subject.species + "~").toUpperCase());
+        System.out.println(("-" + subject.name + " the " + subject.species + "-").toUpperCase());
         System.out.println();
         System.out.println("Happiness: " + subject.happiness);
         System.out.println();
