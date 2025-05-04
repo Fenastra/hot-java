@@ -1,3 +1,5 @@
+// This is the majority of the code. Lays out pet behaviors and attributes.
+
 public class Pet {
 
     String name;

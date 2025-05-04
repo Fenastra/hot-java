@@ -1,3 +1,5 @@
+// This is the file where stuff happens. It's also where objects are created.
+
 public class House {
     public static void main(String [] args) {
         

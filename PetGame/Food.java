@@ -1,3 +1,5 @@
+// This is where the Food class is defined, along with its data print function.
+
 public class Food {
     String name;
     int baseHappy;
